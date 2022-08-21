@@ -1,0 +1,35 @@
+/*  Hero */
+.hero {
+  background-color: var(--bg-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  background-image: linear-gradient(to right, var(--bg-image), var(--bg-image)),
+    url('../images/herobgp/hero-bgi.jpg');
+
+  margin-left: auto;
+  margin-right: auto;
+
+  min-height: 600px;
+  /* секция сожмется, но(картинка) не больше чем оригинльый размер */
+  max-width: 1600px;
+  text-align: center;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  &__title {
+    color: var(--hero-text-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 30px;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
