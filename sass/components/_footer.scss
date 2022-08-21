@@ -10,16 +10,87 @@
 
   &__list {
     @extend %list;
+    margin-right: auto;
   }
 
   &__box {
+    @media screen and (min-width: 480px) {
+      flex-direction: column;
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-direction: unset;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 60px 165px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+      gap: 70px;
+    }
+
     display: flex;
-    gap: 70px;
+  }
+  &__form {
+    @media screen and (min-width: 480px) {
+      display: block;
+      align-items: center;
+      text-align: center;
+      margin: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      align-items: center;
+      text-align: center;
+      gap: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: wrap;
+      align-items: left;
+    }
+  }
+
+  &__boxlogo {
+    @media screen and (min-width: 480px) {
+      display: block;
+      text-align: center;
+      margin: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+      text-align: left;
+    }
   }
 
   &__join {
     text-transform: uppercase;
     color: #ffffff;
+  }
+  &__secondbox {
+    @media screen and (min-width: 480px) {
+      display: block;
+      text-align: center;
+      margin: 60px 0;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      text-align: center;
+      margin: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+      text-align: left;
+    }
   }
 
   &__sociallinks {
@@ -80,14 +151,55 @@
 
     color: #ffffff;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+    @media screen and (min-width: 480px) {
+      display: block;
+      align-items: center;
+      justify-content: center;
+      margin: 0 0 20px 0;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      margin: 0 0 20px 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 0 20px 0;
+    }
   }
 
   &__lastbox {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+
+    @media screen and (min-width: 480px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: row;
+    }
   }
 
   /* Свойства для обнуления курсива у address font-style: normal */
@@ -100,11 +212,28 @@
   }
 
   &__item {
-    margin-bottom: 9px;
-
-    &:nth-child(3n) {
-      margin-bottom: 0px;
+    gap: 9px;
+    @media screen and (min-width: 480px) {
+      display: block;
+      text-align: center;
+      margin: 0;
     }
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      text-align: center;
+      margin: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+      text-align: left;
+    }
+
+    // margin-bottom: 9px;
+    // &:nth-child(3n) {
+    //   margin-bottom: 0px;
+    // }
   }
 
   &__addresses {
@@ -127,21 +256,64 @@
 
   &__logo {
     margin-top: 60px;
+
+    @media screen and (min-width: 480px) {
+      display: block;
+      text-align: center;
+      margin: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      text-align: center;
+      margin: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: inline;
+      text-align: left;
+    }
   }
 
   &__input {
-    width: 358px;
     height: 50px;
     background-color: transparent;
     outline: none;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    padding: 15px 295px 15px 16px;
+
     color: white;
-    margin-right: 12px;
+
     &::placeholder {
       color: rgba(255, 255, 255, 0.6);
+    }
+
+    @media screen and (min-width: 480px) {
+      display: block;
+      text-align: center;
+      justify-content: center;
+      // margin-bottom: 20px;
+      margin: 0;
+      width: 450px;
+      padding: 15px 387px 15px 16px;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      text-align: center;
+      justify-content: center;
+      // margin-bottom: 20px;
+      width: 450px;
+      padding: 15px 387px 15px 16px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+      text-align: left;
+      margin-right: 12px;
+      width: 358px;
+      padding: 15px 295px 15px 16px;
     }
   }
 }

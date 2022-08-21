@@ -82,6 +82,21 @@
   @extend %list;
   display: flex;
   margin-left: auto;
+
+  // @media screen and (min-width: 480px) {
+  //   display: none;
+  // }
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+
   &__link {
     color: var(--site-navcontacts-text-color);
     font-weight: 500;
