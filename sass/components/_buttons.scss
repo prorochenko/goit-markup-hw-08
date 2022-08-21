@@ -66,8 +66,21 @@
   @extend %list;
   display: flex;
   justify-content: center;
-  margin-top: 0;
-  margin-bottom: 34px;
+  margin: 0 0 34px 0;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 15px 8px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .portfolio__buttons .item:nth-last-child(5n) {

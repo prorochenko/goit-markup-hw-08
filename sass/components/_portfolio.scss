@@ -7,12 +7,22 @@
   gap: 30px;
 
   &__item {
-    flex-basis: calc((100% - 60px) / 3); /*370px   calc((100% - 60px) / 3)*/
+    @media screen and (min-width: 480px) {
+      flex-basis: calc(100%); /*370px   calc((100% - 60px) / 3)*/
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 30px) / 2); /*370px   calc((100% - 60px) / 3)*/
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 60px) / 3); /*370px   calc((100% - 60px) / 3)*/
+    }
   }
 
-  &__item:nth-last-child(-n + 3) {
-    margin-bottom: 0;
-  }
+  // &__item:nth-last-child(-n + 3) {
+  //   // margin-bottom: 0;
+  // }
 
   &__link {
     display: block;

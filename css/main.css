@@ -580,10 +580,30 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 0;
-  margin-bottom: 34px;
+  margin: 0 0 34px 0;
 }
-
+@media screen and (min-width: 480px) {
+  .portfolio__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 15px 8px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio__buttons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .portfolio__buttons .item:nth-last-child(5n) {
   margin-right: 0px;
 }
@@ -643,8 +663,6 @@ body {
 }
 
 .modal {
-  min-height: 581px;
-  min-width: 528px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -658,10 +676,27 @@ body {
   -webkit-transition: transorm 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transorm 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 480px) {
+  .modal {
+    min-height: 609px;
+    min-width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    min-height: 609px;
+    min-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-height: 581px;
+    min-width: 528px;
+  }
+}
 
 textarea {
   resize: none;
-  width: 448px;
   height: 120px;
   padding: 12px 16px;
   line-height: 1.17;
@@ -694,10 +729,24 @@ textarea::placeholder {
 }
 
 .formbackdrop {
-  width: 448px;
   height: 342px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .formbackdrop {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .formbackdrop {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .formbackdrop {
+    width: 448px;
+  }
 }
 
 .title-form {
@@ -705,7 +754,7 @@ textarea::placeholder {
   display: -ms-flexbox;
   display: flex;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.15;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -754,10 +803,24 @@ textarea::placeholder {
 }
 
 textarea.labelfield {
-  width: 448px;
   height: 120px;
   margin-bottom: 20px;
   padding: 12px 16px;
+}
+@media screen and (min-width: 480px) {
+  textarea.labelfield {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 768px) {
+  textarea.labelfield {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  textarea.labelfield {
+    width: 448px;
+  }
 }
 
 /* КНОПКА ЧЕК */
@@ -995,12 +1058,23 @@ textarea.labelfield {
       flex-wrap: wrap;
   gap: 30px;
 }
-.portfolios__item {
-  -ms-flex-preferred-size: calc((100% - 60px) / 3);
-      flex-basis: calc((100% - 60px) / 3); /*370px   calc((100% - 60px) / 3)*/
+@media screen and (min-width: 480px) {
+  .portfolios__item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; /*370px   calc((100% - 60px) / 3)*/
+  }
 }
-.portfolios__item:nth-last-child(-n+3) {
-  margin-bottom: 0;
+@media screen and (min-width: 768px) {
+  .portfolios__item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2); /*370px   calc((100% - 60px) / 3)*/
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolios__item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3); /*370px   calc((100% - 60px) / 3)*/
+  }
 }
 .portfolios__link {
   display: block;
@@ -1468,7 +1542,8 @@ textarea.labelfield {
             justify-content: center;
     margin: 0;
     width: 450px;
-    padding: 15px 387px 15px 16px;
+    padding: 13px 16px;
+    text-align: start;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1479,16 +1554,17 @@ textarea.labelfield {
         -ms-flex-pack: center;
             justify-content: center;
     width: 450px;
-    padding: 15px 387px 15px 16px;
+    padding: 13px 16px;
+    text-align: start;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__input {
     display: block;
-    text-align: left;
+    text-align: start;
     margin-right: 12px;
     width: 358px;
-    padding: 15px 295px 15px 16px;
+    padding: 13px 16px;
   }
 }
 
