@@ -13,6 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
   }
 
@@ -24,16 +25,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
-    height: 92px;
+    padding: 16px 32px;
     border-radius: 4px;
     border: 1px solid #afb1b8;
     color: var(--fill-default-icon);
 
-    transition-property: border, color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 480px) {
+      width: 210px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
   }
+  transition-property: border, color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &__link:hover,
   &__link:focus {
