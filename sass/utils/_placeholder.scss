@@ -35,9 +35,20 @@
 %container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid red;
-  outline-offset: -2px; */
+  outline: 2px solid red;
+  outline-offset: -2px;
+
+  @media (min-width: 450px) {
+    width: 450px;
+  }
+
+  @media (min-width: 738px) {
+    width: 738px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
 }

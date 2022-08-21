@@ -317,11 +317,25 @@ img {
 .feature__container, .doing__container, .team__container, .footer__container, .portfolio__container, .clients__container, .header__container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid red;
-  outline-offset: -2px; */
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+@media (min-width: 450px) {
+  .feature__container, .doing__container, .team__container, .footer__container, .portfolio__container, .clients__container, .header__container {
+    width: 450px;
+  }
+}
+@media (min-width: 738px) {
+  .feature__container, .doing__container, .team__container, .footer__container, .portfolio__container, .clients__container, .header__container {
+    width: 738px;
+  }
+}
+@media (min-width: 1200px) {
+  .feature__container, .doing__container, .team__container, .footer__container, .portfolio__container, .clients__container, .header__container {
+    width: 1200px;
+  }
 }
 
 :root {
