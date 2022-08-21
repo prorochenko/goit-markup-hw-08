@@ -1,10 +1,15 @@
-/* what we do */
-
 .doing {
+  & {
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+      display: none;
+    }
+  }
+
   @extend %section;
   &__container {
     @extend %container;
   }
+
   &__list {
     @extend %list;
     display: flex;
