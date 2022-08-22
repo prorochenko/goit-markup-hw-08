@@ -533,6 +533,26 @@ body {
   fill: currentColor;
 }
 
+@media screen and (min-width: 768px) {
+  .navcontacts__icon--envelope {
+    width: 14px;
+    height: 10px;
+  }
+  .navcontacts__icon--smartphone {
+    width: 10px;
+    height: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navcontacts__icon--envelope {
+    width: 16px;
+    height: 12px;
+  }
+  .navcontacts__icon--smartphone {
+    width: 10px;
+    height: 16px;
+  }
+}
 /* Buttons */
 .button {
   cursor: pointer;
