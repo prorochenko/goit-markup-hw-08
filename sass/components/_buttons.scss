@@ -3,6 +3,22 @@
   cursor: pointer;
 }
 
+.header__mobilebutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
 .hero__button {
   display: inline-block;
   color: var(--button-primary-text-color);
