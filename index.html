@@ -21,25 +21,19 @@
         <div class="header__nav">
           <nav class="nav">
             <a href="./index.html" class="logo">Web<span class="logo--header">Studio</span></a>
-            
+
             <!-- Burger Menu -->
-            <button 
-              type="button" 
-              class="header__mobilebutton js-open-menu" 
-              aria-expanded="false" 
-              data-menu-button>
-              <svg 
-                width="40" 
-                height="40" 
-                arial-label="перемикач мобільного меню">
-                  <use class="header__icon-cross" href="./images/sprite.svg#icon-menu_40px"></use>
+
+            <button
+              type="button"
+              class="header__mobilebutton js-open-menu"
+              aria-expanded="false"
+              data-menu-button
+            >
+              <svg width="40" height="40" arial-label="перемикач мобільного меню">
+                <use class="header__icon-cross" href="./images/sprite.svg#icon-menu_40px"></use>
               </svg>
             </button>
-            <!-- <div class="menu-container js-menu-container" id="menu-container"> </div> -->
-
-
-<use class="header__icon-menu" href="./images/sprite.svg#icon-menu_40px"></use>
-
 
             <ul class="menu">
               <li class="menu__item"><a href=" ./" class="menu__link--current">Студія</a></li>
@@ -74,8 +68,12 @@
       <!-- Портфолио/Герой -->
 
       <section class="hero">
-        <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="hero__button button" data-modal-open>Замовити послугу</button>
+        <div class="hero__container">
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="hero__button button" data-modal-open>
+            Замовити послугу
+          </button>
+        </div>
       </section>
 
       <!-- Особенности -->
@@ -172,7 +170,12 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="cards">
-              <img src="./images/portrait1.jpg" class="team__portrait" alt="чоловік-дизайнер посміхається" />
+              <img
+                src="./images/portrait1.jpg"
+                class="team__portrait"
+                alt="чоловік-дизайнер посміхається"
+                width="450"
+              />
               <div class="cards__text">
                 <h3 class="cards__title">Ігор Дем'яненко</h3>
                 <p lang="en" class="cards__position">Product Designer</p>
@@ -235,8 +238,9 @@
             <li class="cards">
               <img
                 src="./images/portrait2.jpg"
-                 class="team__portrait"
+                class="team__portrait"
                 alt="фронтенд девелопер жінка посміхається"
+                width="450"
               />
               <div class="cards__text">
                 <h3 class="cards__title">Ольга Рєпіна</h3>
@@ -298,7 +302,12 @@
               </div>
             </li>
             <li class="cards">
-              <img src="./images/portrait3.jpg" class="team__portrait" alt="маркетолог чоловік посміхаєтсья"/>
+              <img
+                src="./images/portrait3.jpg"
+                class="team__portrait"
+                alt="маркетолог чоловік посміхаєтсья"
+                width="450"
+              />
               <div class="cards__text">
                 <h3 class="cards__title">Микола Тарасов</h3>
                 <p lang="en" class="cards__position">Marketing</p>
@@ -361,8 +370,9 @@
             <li class="cards">
               <img
                 src="./images/portrait4.jpg"
-                 class="team__portrait"
+                class="team__portrait"
                 alt="ЮИ дизайнер посміхається портрет"
+                width="450"
               />
               <div class="cards__text">
                 <h3 class="cards__title">Михайло Єрмаков</h3>
@@ -539,7 +549,10 @@
                     </a>
                   </li>
                   <li class="footer__item">
-                    <a href="mailto:info@devstudio.com" class="footer__link footer__link--transparency">
+                    <a
+                      href="mailto:info@devstudio.com"
+                      class="footer__link footer__link--transparency"
+                    >
                       info@devstudio.com
                     </a>
                   </li>
@@ -616,7 +629,6 @@
                 class="footer__input"
                 type="email"
                 name="mail"
-                id="mail"
                 placeholder="E-mail"
                 autocomplete="email"
               />
@@ -683,11 +695,7 @@
           </div>
           <div class="termscondition">
             <label class="register-agreement">
-              <input
-                class="register-checkbox"
-                type="checkbox"
-                name="user-agreement"
-              />
+              <input class="register-checkbox" type="checkbox" name="user-agreement" />
 
               <svg class="register-agreement-icon" width="16" height="15">
                 <use class="icon-uncheck" href="./images/sprite.svg#icon-unchecked"></use>
@@ -702,95 +710,75 @@
           <button class="button field" type="submit">Відправити</button>
         </form>
       </div>
+    </div>
+
+    <!-- перемикач мобільного меню -->
+
+    <div class="backdrop is-hidden js-menu-container">
+      <div class="mobile-menu">
+        <div class="mobile-menu__button">
+          <button class="header__mobilebutton js-close-menu" type="button">
+            <svg width="40" height="40">
+              <use class="header__icon-menu" href="./images/sprite.svg#icon-close_40px"></use>
+            </svg>
+          </button>
+        </div>
+        <ul class="mobile__menu">
+          <li class="menu__item"><a href=" ./" class="menu__link--current">Студія</a></li>
+          <li class="menu__item">
+            <a href=" ./portfolio.html" class="menu__link">Портфоліо</a>
+          </li>
+          <li class="menu__item"><a href=" ./contacts.html" class="menu__link">Контакти</a></li>
+        </ul>
+
+        <ul class="navcontacts__mobile">
+          <li class="navcontacts__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="navcontacts__link navcontacts__link--envelope"
+            >
+              <svg class="navcontacts__icon navcontacts__icon--envelope">
+                <use href="./images/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="navcontacts__item">
+            <a href="tel:+380961111111" class="navcontacts__link navcontacts__link--smartphone">
+              <svg class="navcontacts__icon navcontacts__icon--smartphone">
+                <use href="./images/sprite.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-media-list">
+          <li class="mobile-media-item">
+            <a href="" class="mobile-media-link link">Instagram</a>
+          </li>
+
+          <li class="mobile-media-item">
+            <a href="" class="mobile-media-link link">Twitter</a>
+          </li>
+          <li class="mobile-media-item">
+            <a href="" class="mobile-media-link link">Facebook</a>
+          </li>
+          <li class="mobile-media-item">
+            <a href="" class="mobile-media-link link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
-
-
-<div class="backdrop is-hidden js-menu-container" data-modal>
-      <div class="modal">
-        
-            <button 
-              type="button" 
-              class="header__mobilebutton js-close-menu" 
-              aria-expanded="false" 
-              data-menu-button>
-              <svg 
-                width="40" 
-                height="40" 
-                arial-label="перемикач мобільного меню">
-                  <use class="header__icon-menu" href="./images/sprite.svg#icon-close_40px"></use>
-              </svg>
-            </button>            
-
-        <form action="" class="formbackdrop js-speaker-form">
-          <strong class="title-form">Залиште свої дані, ми вам передзвонимо</strong>
-          <div class="form-field">
-            <label class="name-field" for="name">Ім'я</label>
-            <input
-              class="labelfield"
-              type="text"
-              name="name"
-              id="name"
-              autocomplete="given-name"
-              autofocus
-            />
-            <svg class="register-icon" width="18" height="18">
-              <use href="./images/sprite.svg#icon-email-black-18dp-1"></use>
-            </svg>
-          </div>
-          <div class="form-field">
-            <label class="name-field" for="tel">Телефон</label>
-            <input class="labelfield" type="tel" name="tel" id="tel" autocomplete="tel" />
-            <svg class="register-icon" width="18" height="18">
-              <use href="./images/sprite.svg#icon-person-black-18dp-1"></use>
-            </svg>
-          </div>
-          <div class="form-field">
-            <label class="name-field" for="mail">Пошта</label>
-            <input class="labelfield" type="email" name="mail" id="mail" autocomplete="email" />
-            <svg class="register-icon" width="18" height="18">
-              <use href="./images/sprite.svg#icon-phone-black-18dp-1"></use>
-            </svg>
-          </div>
-          <div class="form-field">
-            <label class="name-field" for="comment">Коментар</label>
-            <textarea
-              class="labelfield"
-              name="comment"
-              id="comment"
-              rows="10"
-              placeholder="Введіть текст"
-            ></textarea>
-          </div>
-          <div class="termscondition">
-            <label class="register-agreement">
-              <input
-                class="register-checkbox"
-                type="checkbox"
-                name="user-agreement"
-              />
-
-              <svg class="register-agreement-icon" width="16" height="15">
-                <use class="icon-uncheck" href="./images/sprite.svg#icon-unchecked"></use>
-                <use class="icon-check" href="./images/sprite.svg#icon-icon-check"></use>
-              </svg>
-              <span class="register-agreement-text"
-                >Погоджуюся з розсилкою та приймаю
-                <a class="link-term" href="google.com" target="_blank"> Умови договору</a></span
-              >
-            </label>
-          </div>
-          <button class="button field" type="submit">Відправити</button>
-        </form>
-      </div>
-
-
-     <!-- Бібліотека для правильного блокування скролу (додаємо перед скриптом для моб.меню) -->
+    <!-- Бібліотека для правильного блокування скролу (додаємо перед скриптом для моб.меню) -->
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script scr="./js/mobile-menu.js" ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
