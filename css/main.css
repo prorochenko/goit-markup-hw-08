@@ -2053,7 +2053,7 @@ textarea.labelfield {
     background-image: linear-gradient(to right, var(--bg-image), var(--bg-image)), url("../images/hero/hero-mobile.jpg");
   }
 }
-@media screen and (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 320px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 320px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 320px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(var(--bg-image)), to(var(--bg-image))), url("../images/hero/hero-mobile-x2.jpg");
     background-image: linear-gradient(to right, var(--bg-image), var(--bg-image)), url("../images/hero/hero-mobile-x2.jpg");
@@ -2065,7 +2065,7 @@ textarea.labelfield {
     background-image: linear-gradient(to right, var(--bg-image), var(--bg-image)), url("../images/hero/hero-tab.jpg");
   }
 }
-@media screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(var(--bg-image)), to(var(--bg-image))), url("../images/hero/hero-tab-x2.jpg");
     background-image: linear-gradient(to right, var(--bg-image), var(--bg-image)), url("../images/hero/hero-tab-x2.jpg");
@@ -2077,7 +2077,7 @@ textarea.labelfield {
     background-image: linear-gradient(to right, var(--bg-image), var(--bg-image)), url("../images/hero/hero-desk.jpg");
   }
 }
-@media screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(var(--bg-image)), to(var(--bg-image))), url("../images/hero/hero-desk-x2.jpg");
     background-image: linear-gradient(to right, var(--bg-image), var(--bg-image)), url("../images/hero/hero-desk-x2.jpg");
