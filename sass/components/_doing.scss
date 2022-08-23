@@ -1,6 +1,6 @@
 .doing {
   & {
-    @media screen and (min-width: 480px) and (max-width: 1199px) {
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
       display: none;
     }
   }
@@ -37,7 +37,7 @@
 
     opacity: 1;
 
-    width: 370px;
+    max-width: 370px;
     height: 70px;
     bottom: 0;
 

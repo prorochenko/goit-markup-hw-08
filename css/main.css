@@ -314,28 +314,28 @@ img {
   margin-top: 0;
 }
 
-.hero__container, .feature__container, .doing__container, .team__container, .footer__container, .portfolio__container, .clients__container, .mobile-menu, .header__container {
+.hero__container, .feature__container, .doing__container, .team__container, .footer__container, .portfolio__container, .clients__container, .header__container {
   margin-left: auto;
   margin-right: auto;
   outline: 2px solid red;
   outline-offset: -2px;
 }
-@media screen and (min-width: 480px) {
-  .hero__container, .feature__container, .doing__container, .team__container, .footer__container, .portfolio__container, .clients__container, .mobile-menu, .header__container {
+@media screen and (min-width: 320px) {
+  .hero__container, .feature__container, .doing__container, .team__container, .footer__container, .portfolio__container, .clients__container, .header__container {
     max-width: 450px;
     padding-left: 0;
     padding-right: 0;
   }
 }
 @media screen and (min-width: 768px) {
-  .hero__container, .feature__container, .doing__container, .team__container, .footer__container, .portfolio__container, .clients__container, .mobile-menu, .header__container {
+  .hero__container, .feature__container, .doing__container, .team__container, .footer__container, .portfolio__container, .clients__container, .header__container {
     max-width: 738px;
     padding-left: 0;
     padding-right: 0;
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero__container, .feature__container, .doing__container, .team__container, .footer__container, .portfolio__container, .clients__container, .mobile-menu, .header__container {
+  .hero__container, .feature__container, .doing__container, .team__container, .footer__container, .portfolio__container, .clients__container, .header__container {
     max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -406,6 +406,12 @@ body {
 @media screen and (max-width: 767px) {
   .nav {
     padding: 10px 0 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -419,7 +425,6 @@ body {
 }
 @media screen and (max-width: 767px) {
   .logo {
-    margin-right: 276px;
     font-size: 24px;
   }
 }
@@ -683,7 +688,7 @@ body {
           justify-content: center;
   margin: 0 0 34px 0;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .portfolio__buttons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -842,7 +847,7 @@ body {
   position: relative;
 }
 
-.mobile-media-link:not(:first-child)::before {
+.mobile-media-item:not(:first-child)::before {
   content: "";
   display: block;
   position: absolute;
@@ -850,7 +855,7 @@ body {
   left: -10px;
   width: 1px;
   height: 22px;
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 /* Когда модалка спрятана к ней применяем: */
@@ -873,7 +878,7 @@ body {
   -webkit-transition: transorm 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transorm 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .modal {
     min-height: 609px;
     min-width: 450px;
@@ -930,7 +935,7 @@ textarea::placeholder {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .formbackdrop {
     width: 370px;
   }
@@ -1004,7 +1009,7 @@ textarea.labelfield {
   margin-bottom: 20px;
   padding: 12px 16px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   textarea.labelfield {
     width: 370px;
   }
@@ -1221,7 +1226,7 @@ textarea.labelfield {
   border: 1px solid #afb1b8;
   color: var(--fill-default-icon);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .clients__link {
     width: 210px;
   }
@@ -1255,7 +1260,7 @@ textarea.labelfield {
       flex-wrap: wrap;
   gap: 30px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .portfolios__item {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%; /*370px   calc((100% - 60px) / 3)*/
@@ -1380,7 +1385,7 @@ textarea.labelfield {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .footer__box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1409,7 +1414,7 @@ textarea.labelfield {
     gap: 70px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .footer__form {
     display: block;
     -webkit-box-align: center;
@@ -1438,7 +1443,7 @@ textarea.labelfield {
             align-items: left;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .footer__boxlogo {
     display: block;
     text-align: center;
@@ -1461,7 +1466,7 @@ textarea.labelfield {
   text-transform: uppercase;
   color: #ffffff;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .footer__secondbox {
     display: block;
     text-align: center;
@@ -1548,7 +1553,7 @@ textarea.labelfield {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .footer__subscribe {
     display: block;
     -webkit-box-align: center;
@@ -1594,7 +1599,7 @@ textarea.labelfield {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .footer__lastbox {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1655,7 +1660,7 @@ textarea.labelfield {
 .footer__item {
   gap: 9px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .footer__item {
     display: block;
     text-align: center;
@@ -1695,7 +1700,7 @@ textarea.labelfield {
 .footer__logo {
   margin-top: 60px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .footer__logo {
     display: block;
     text-align: center;
@@ -1740,7 +1745,7 @@ textarea.labelfield {
 .footer__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .footer__input {
     display: block;
     text-align: center;
@@ -1748,7 +1753,7 @@ textarea.labelfield {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 0;
-    width: 450px;
+    width: 100%;
     padding: 13px 16px;
     text-align: start;
   }
@@ -1795,7 +1800,7 @@ textarea.labelfield {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .cards {
     width: 450px;
   }
@@ -1810,7 +1815,7 @@ textarea.labelfield {
     width: 270px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .cards__portrait {
     width: 450px;
   }
@@ -1898,7 +1903,7 @@ textarea.labelfield {
   background: var(--accent-color);
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .doing {
     display: none;
   }
@@ -1924,7 +1929,7 @@ textarea.labelfield {
   height: 100%;
   background: rgba(47, 48, 58, 0.8);
   opacity: 1;
-  width: 370px;
+  max-width: 370px;
   height: 70px;
   bottom: 0;
   font-size: 14px;
@@ -1954,9 +1959,9 @@ textarea.labelfield {
       flex-wrap: wrap;
   gap: 30px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .feature__item {
-    width: 450px;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1997,9 +2002,9 @@ textarea.labelfield {
   border-radius: 4px;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .feature__icon {
-    width: 450px;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -2047,10 +2052,10 @@ textarea.labelfield {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .hero__title {
     font-size: 26px;
     line-height: 1.61;
-    max-width: 360px;
+    max-width: 320px;
   }
 }/*# sourceMappingURL=main.css.map */

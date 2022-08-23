@@ -20,7 +20,7 @@
 
 // For mobile
 .mobile-menu {
-  @extend %container;
+  // @extend %container;
   position: relative;
   background: #ffffff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
@@ -88,7 +88,7 @@
 .mobile-media-item {
   position: relative;
 }
-.mobile-media-link:not(:first-child)::before {
+.mobile-media-item:not(:first-child)::before {
   content: '';
   display: block;
   position: absolute;
@@ -96,8 +96,7 @@
   left: -10px;
   width: 1px;
   height: 22px;
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
-  // transform: rotate(90deg);
+  border: 1px solid rgba(33, 33, 33, 0.2);
 }
 /* Когда модалка спрятана к ней применяем: */
 .backdrop.is-hidden .modal {
@@ -118,7 +117,7 @@
 
   transform: scale(1) translate(-50%, -50%);
   transition: transorm 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 320px) {
     min-height: 609px;
     min-width: 450px;
   }
@@ -152,7 +151,7 @@ textarea::placeholder {
   height: 342px;
   margin-left: auto;
   margin-right: auto;
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 320px) {
     width: 370px;
   }
   @media screen and (min-width: 768px) {
@@ -208,7 +207,7 @@ textarea.labelfield {
   height: 120px;
   margin-bottom: 20px;
   padding: 12px 16px;
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 320px) {
     width: 370px;
   }
   @media screen and (min-width: 768px) {
