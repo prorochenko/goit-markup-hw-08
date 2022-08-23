@@ -442,9 +442,16 @@ body {
   display: flex;
   margin-left: 93px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) {
   .menu {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 .menu__item:nth-child(n+1) {
@@ -492,13 +499,16 @@ body {
   display: flex;
   margin-left: auto;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) {
   .navcontacts {
     display: none;
   }
 }
 @media screen and (min-width: 768px) {
   .navcontacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 10px;
@@ -545,7 +555,7 @@ body {
   fill: currentColor;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) {
   .navcontacts__icon--envelope {
     display: none;
   }
@@ -830,7 +840,6 @@ body {
 }
 
 .mobile-media-list {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2050,25 +2059,25 @@ textarea.labelfield {
     background-image: linear-gradient(to right, var(--bg-image), var(--bg-image)), url("../images/hero/hero-mobile-x2.jpg");
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(var(--bg-image)), to(var(--bg-image))), url("../images/hero/hero-tab.jpg");
     background-image: linear-gradient(to right, var(--bg-image), var(--bg-image)), url("../images/hero/hero-tab.jpg");
   }
 }
-@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(var(--bg-image)), to(var(--bg-image))), url("../images/hero/hero-tab-x2.jpg");
     background-image: linear-gradient(to right, var(--bg-image), var(--bg-image)), url("../images/hero/hero-tab-x2.jpg");
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 769px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(var(--bg-image)), to(var(--bg-image))), url("../images/hero/hero-desk.jpg");
     background-image: linear-gradient(to right, var(--bg-image), var(--bg-image)), url("../images/hero/hero-desk.jpg");
   }
 }
-@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(var(--bg-image)), to(var(--bg-image))), url("../images/hero/hero-desk-x2.jpg");
     background-image: linear-gradient(to right, var(--bg-image), var(--bg-image)), url("../images/hero/hero-desk-x2.jpg");
@@ -2077,20 +2086,24 @@ textarea.labelfield {
 .hero__title {
   color: var(--hero-text-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 30px;
-  width: 696px;
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) {
   .hero__title {
     font-size: 26px;
     line-height: 1.61;
     max-width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
   }
 }/*# sourceMappingURL=main.css.map */
