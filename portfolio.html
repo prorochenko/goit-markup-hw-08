@@ -92,12 +92,34 @@
             <li class="portfolios__item">
               <a class="portfolios__link" href="">
                 <div class="portfolios__thumb">
-                  <img
-                    srcset="./images/portfolio1.jpg 1x, ./images/portfolio1-2x.jpg 2x"
-                    src="./images/portfolio1.jpg"
-                    alt="проєкт 1 веб-сайт"
-                    style="max-width: 100%"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/port1-desk.jpg    1x,
+                        ./images/portfolio/port1-desk-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port1-tab.jpg    1x,
+                        ./images/portfolio/port1-tab-x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port1-mob.jpg    1x,
+                        ./images/portfolio/port1-mob-x2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio1.jpg"
+                      alt="проєкт 1 веб-сайт"
+                      style="max-width: 100%"
+                    />
+                  </picture>
                   <div class="portfolios__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -116,7 +138,27 @@
               <a class="portfolios__link" href="">
                 <div class="portfolios__thumb">
                   <picture>
-                    <source srcset="./images/portfolio2-2x.jpg" media="(max-width: 767px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/port2-desk.jpg    1x,
+                        ./images/portfolio/port2-desk-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port2-tab.jpg    1x,
+                        ./images/portfolio/port2-tab-x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port2-mob.jpg    1x,
+                        ./images/portfolio/port2-mob-x2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
                     <img
                       src="./images/portfolio2.jpg"
                       alt="проєкт 2 дизайн постера баскетбол"
@@ -141,7 +183,27 @@
               <a class="portfolios__link" href="">
                 <div class="portfolios__thumb">
                   <picture>
-                    <source srcset="./images/portfolio3-2x.jpg" media="(max-width: 767px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/port3-desk.jpg    1x,
+                        ./images/portfolio/port3-desk-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port3-tab.jpg    1x,
+                        ./images/portfolio/port3-tab-x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port3-mob.jpg    1x,
+                        ./images/portfolio/port3-mob-x2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
                     <img
                       src="./images/portfolio3.jpg"
                       alt="проєкт 3 додаток для ресторану"
@@ -166,7 +228,27 @@
               <a class="portfolios__link" href="">
                 <div class="portfolios__thumb">
                   <picture>
-                    <source srcset="./images/portfolio4-2x.jpg" media="(max-width: 767px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/port4-desk.jpg    1x,
+                        ./images/portfolio/port4-desk-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port4-tab.jpg    1x,
+                        ./images/portfolio/port4-tab-x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port4-mob.jpg    1x,
+                        ./images/portfolio/port4-mob-x2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
                     <img
                       src="./images/portfolio4.jpg"
                       alt="проєкт 4 навушники маркетинг"
@@ -191,7 +273,27 @@
               <a class="portfolios__link" href="">
                 <div class="portfolios__thumb">
                   <picture>
-                    <source srcset="./images/portfolio5-2x.jpg" media="(max-width: 767px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/port5-desk.jpg    1x,
+                        ./images/portfolio/port5-desk-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port5-tab.jpg    1x,
+                        ./images/portfolio/port5-tab-x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port5-mob.jpg    1x,
+                        ./images/portfolio/port5-mob-x2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
                     <img
                       src="./images/portfolio5.jpg"
                       alt="проєкт 5 дизайн для коробок"
@@ -216,7 +318,27 @@
               <a class="portfolios__link" href="">
                 <div class="portfolios__thumb">
                   <picture>
-                    <source srcset="./images/portfolio6-2x.jpg" media="(max-width: 767px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/port6-desk.jpg    1x,
+                        ./images/portfolio/port6-desk-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port6-tab.jpg    1x,
+                        ./images/portfolio/port6-tab-x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port6-mob.jpg    1x,
+                        ./images/portfolio/port6-mob-x2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
                     <img
                       src="./images/portfolio6.jpg"
                       alt="проєкт 6 веб-сайт страница"
@@ -241,7 +363,27 @@
               <a class="portfolios__link" href="">
                 <div class="portfolios__thumb">
                   <picture>
-                    <source srcset="./images/portfolio7-2x.jpg" media="(max-width: 767px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/port7-desk.jpg    1x,
+                        ./images/portfolio/port7-desk-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port7-tab.jpg    1x,
+                        ./images/portfolio/port7-tab-x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port7-mob.jpg    1x,
+                        ./images/portfolio/port7-mob-x2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
                     <img
                       src="./images/portfolio7.jpg"
                       alt="проєкт 7 дизайн до видання"
@@ -266,7 +408,27 @@
               <a class="portfolios__link" href="">
                 <div class="portfolios__thumb">
                   <picture>
-                    <source srcset="./images/portfolio8-2x.jpg" media="(max-width: 767px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/port8-desk.jpg    1x,
+                        ./images/portfolio/port8-desk-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port8-tab.jpg    1x,
+                        ./images/portfolio/port8-tab-x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port8-mob.jpg    1x,
+                        ./images/portfolio/port8-mob-x2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
                     <img
                       src="./images/portfolio8.jpg"
                       alt="проєкт 8 маркетинг к проєкту ЛАБ"
@@ -291,7 +453,27 @@
               <a class="portfolios__link" href="">
                 <div class="portfolios__thumb">
                   <picture>
-                    <source srcset="./images/portfolio9-2x.jpg" media="(max-width: 767px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/port9-desk.jpg    1x,
+                        ./images/portfolio/port9-desk-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port9-tab.jpg    1x,
+                        ./images/portfolio/port9-tab-x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port9-mob.jpg    1x,
+                        ./images/portfolio/port9-mob-x2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
                     <img
                       src="./images/portfolio9.jpg"
                       alt="проєкт 9 додаток"
@@ -454,6 +636,14 @@
 
         <ul class="navcontacts__mobile">
           <li class="navcontacts__item">
+            <a href="tel:+380961111111" class="navcontacts__link navcontacts__link--smartphone">
+              <svg class="navcontacts__icon navcontacts__icon--smartphone">
+                <use href="./images/sprite.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="navcontacts__item">
             <a
               href="mailto:info@devstudio.com"
               class="navcontacts__link navcontacts__link--envelope"
@@ -462,14 +652,6 @@
                 <use href="./images/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
-            >
-          </li>
-          <li class="navcontacts__item">
-            <a href="tel:+380961111111" class="navcontacts__link navcontacts__link--smartphone">
-              <svg class="navcontacts__icon navcontacts__icon--smartphone">
-                <use href="./images/sprite.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
             >
           </li>
         </ul>
