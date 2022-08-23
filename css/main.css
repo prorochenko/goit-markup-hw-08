@@ -455,6 +455,13 @@ body {
 .menu__item:nth-child(n+1) {
   margin-right: 50px;
 }
+.menu__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
 .menu__item {
   display: block;
   padding-top: 32px;
@@ -2023,6 +2030,11 @@ textarea.labelfield {
       flex-wrap: wrap;
   gap: 30px;
 }
+@media screen and (max-width: 480px) {
+  .feature__textbox {
+    padding-left: 10px;
+  }
+}
 @media screen and (min-width: 320px) {
   .feature__item {
     max-width: 450px;
@@ -2100,12 +2112,12 @@ textarea.labelfield {
   /* секция сожмется, но(картинка) не больше чем оригинльый размер */
   max-width: 1600px;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 @media screen and (min-width: 320px) {
   .hero {
     min-height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: -webkit-gradient(linear, left top, right top, from(var(--bg-image)), to(var(--bg-image))), url("../images/hero/hero-mobile.jpg");
     background-image: linear-gradient(to right, var(--bg-image), var(--bg-image)), url("../images/hero/hero-mobile.jpg");
   }
@@ -2138,6 +2150,12 @@ textarea.labelfield {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(var(--bg-image)), to(var(--bg-image))), url("../images/hero/hero-desk-x2.jpg");
     background-image: linear-gradient(to right, var(--bg-image), var(--bg-image)), url("../images/hero/hero-desk-x2.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 .hero__title {
