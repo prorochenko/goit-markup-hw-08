@@ -23,11 +23,15 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 60px 165px;
+      display: flex;
+      align-items: baseline;
     }
 
     @media screen and (min-width: 1200px) {
       flex-wrap: nowrap;
       gap: 70px;
+      display: flex;
+      align-items: baseline;
     }
 
     display: flex;
@@ -298,6 +302,7 @@
       width: 100%;
       padding: 13px 16px;
       text-align: start;
+      padding: 0 15px;
     }
 
     @media screen and (min-width: 768px) {
