@@ -174,10 +174,12 @@
 }
 @media screen and (min-width: 768px) {
   .navcontacts__icon--envelope {
+    display: flex;
     width: 14px;
     height: 10px;
   }
   .navcontacts__icon--smartphone {
+    display: flex;
     width: 10px;
     height: 14px;
   }
